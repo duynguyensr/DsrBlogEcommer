@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@300;400;500;600;700;800&family=Pacifico&family=Permanent+Marker&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: OpenSans, sans-serif;
+}
+
+.nav,
+.nav-2 {
+  z-index: 999;
+}
+
+.nav .sub-menu {
+  position: fixed;
+  top: 0;
+  left: -301px;
+  bottom: 0;
+  z-index: 9999;
+  width: 300px;
+  transition: all 0.5s ease;
+  color: white;
+}
+
+.nav .sub-menu.effect {
+  left: 0;
+}
+
+.banner {
+  height: 90vh;
+  width: 100vw;
+  width: 100%;
+  background-image: linear-gradient(120deg, #000e29, #600f48, #072a97);
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+.shop-banner {
+  background: url("https://demo2.pavothemes.com/shopic/wp-content/uploads/2020/09/h11_shape.png"),
+    #2a2a2a;
+  padding: 70px 15px 70px 15px;
+}
+
+.shop-banner .banner-item {
+  background-image: url("https://demo2wpopal.b-cdn.net/shopic/wp-content/uploads/2020/09/h11_banner-1.jpg");
+  background-size: 110%;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-color: #000e29; */
+  min-height: 280px;
+  -webkit-transition: background-size 0.5s linear;
+  -ms-transition: background-size 0.5s linear;
+  transition: background-size 0.5s linear;
+}
+
+.shop-banner .banner-item:hover {
+  background-size: 115%;
+}
+
+.banner2 {
+  background: url("https://demo2.pavothemes.com/shopic/wp-content/uploads/2020/09/h11_bg-1.png"),
+    black;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.banner3 {
+  background: url("https://demo2.pavothemes.com/shopic/wp-content/uploads/2020/09/h11_bg-2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.banner4 .banner4-item {
+  background: url("https://demo2.pavothemes.com/shopic/wp-content/uploads/2020/09/h11_bg-4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.banner4 .banner4-item2 {
+  background: url("https://demo2.pavothemes.com/shopic/wp-content/uploads/2020/09/h11_bg-5.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #000e29; */
+  -webkit-transition: background-size 0.5s linear;
+  -ms-transition: background-size 0.5s linear;
+  transition: background-size 0.5s;
+}
+
+.banner4 .banner4-item2:hover {
+  background-size: 120%;
+}
+
+.blog-detail {
+  z-index: -1;
+}
+
+.content-blog h2 {
+  width: 100%;
+}
